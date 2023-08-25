@@ -30,8 +30,8 @@ int checkTheme();
 void loaderTheme(bool autoboot, int mode);
 void Animation();
 
-unsigned int text_color;
-bool cColor;
+extern unsigned int text_color;
+extern bool cColor;
 
 extern char loaderPath[MAXPATHLEN];
 
