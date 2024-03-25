@@ -46,7 +46,7 @@ For compile Nintendont yourself, get the following versions of the toolchain com
 * **devkitPPC r35-2**
 * **libOGC 1.8.23-1**
 
-These versions can be downloaded here: https://www.mediafire.com/folder/j0juqb5vvd6z5/devkitPro_archives
+These versions can be downloaded [here](https://archive.org/details/devkitARM-r53-1-any.pkg.tar).
 
 On Windows, run the "Build.bat" batch script for build Nintendont.
 
