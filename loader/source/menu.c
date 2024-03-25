@@ -1875,6 +1875,20 @@ bool SelectDevAndGame(void)
 	// Select the source device. (SD or USB)
 	bool SaveSettings = false;
 	bool redraw = true;	// Need to draw the menu the first time.
+
+	// Auto Select USB
+	ncfg->Config = ncfg->Config | NIN_CFG_USB;
+	int r = SelectGame();
+	if (r & 2)
+	{
+		SaveSettings = true;
+	}
+	
+	if (r & 1) 
+	{
+		return SaveSettings;
+	}
+	
 	while (1)
 	{
 		VIDEO_WaitVSync();
